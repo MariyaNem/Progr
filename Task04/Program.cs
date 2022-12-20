@@ -8,15 +8,7 @@ Console.Write("Введите второе число: ");
 int b = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите третье число: ");
 int c = Convert.ToInt32(Console.ReadLine());
-if (a>b && a>c)
-{
-    Console.Write($"Максимальное число = {a}");
-}
-else if (b>a && b>c)
-{
-    Console.Write($"Максимальное число = {b}");
-}
-else 
-{
-    Console.Write($"Максимальное число = {c}");
-}
+int max = a;
+if (b>max) max=b;
+if (c>max) max=c;
+Console.Write($"max={max}");
