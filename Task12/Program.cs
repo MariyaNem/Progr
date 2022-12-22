@@ -7,12 +7,11 @@ Console.Write("Введите число: ");
 int first = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число: ");
 int second = Convert.ToInt32(Console.ReadLine());
-if (first%second == 0)
-{
-    Console.WriteLine("кратно");
-}
-else
-{
-    int result = first%second;
-    Console.WriteLine($"не кратно {result}");
-}
+//if (first%second == 0) {Console.WriteLine("кратно");}
+//else { int result = first%second; Console.WriteLine($"не кратно {result}");}
+
+bool result = first % second == 0;
+
+if (result) Console.WriteLine("кратно");
+else Console.WriteLine($"не кратно, остаток = {(first % second)}");
+
